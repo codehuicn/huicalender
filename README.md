@@ -1,7 +1,10 @@
 # huicalender
+
 A small calender using jQuery. It can show the month you gave, show the active dates you setted, get the month users selected, get the date users selected.
-You can use it like this:
-    $('.test').huicalender({
+
+### You can use it like this:
+```
+    		$('.test').huicalender({
 			enabledDay: [1,2,3],
 			viewDay: new Date('2016/08/01')
 		}).on('changeMonth', function(e){
@@ -16,3 +19,4 @@ You can use it like this:
 			console.log(e.month)
 			console.log(e.date)
 		})
+```
