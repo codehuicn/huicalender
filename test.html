@@ -6,12 +6,12 @@
 
 	<script src="jquery.js"></script>
 
-	<link rel="stylesheet" href="huicalender/css/huicalender.css">
-	<script src="huicalender/js/huicalender.js"></script>
+	<link rel="stylesheet" href="huicalender/css/huicalendar.css">
+	<script src="huicalender/js/huicalendar.js"></script>
 </head>
 <body>
 	<div class="test">
-		<!-- <table class="huicalender" cellspacing="0">
+		<!-- <table class="huicalendar" cellspacing="0">
 			<thead>
 				<tr>
 					<th><span class="left"></span></th>
@@ -55,13 +55,13 @@
 	</div>
 
 	<script>
-		$('.test').huicalender({
+		$('.test').huicalendar({
 			enabledDay: [1,2,3],
 			viewDay: new Date('2016/08/01')
 		}).on('changeMonth', function(e){
 			console.log(e.year)
 			console.log(e.month)
-			$(this).huicalender({
+			$(this).huicalendar({
 				enabledDay: [4,5,6],
 				viewDay: new Date(e.year+'/'+e.month+'/01')
 			}, 'update')
